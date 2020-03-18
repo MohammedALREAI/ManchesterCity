@@ -141,20 +141,6 @@ button {
             HEADER FOOTER
 ===============================*/
 
-footer {
-    text-align: center;
-    font-size: 16px;
-    color: #ffffff;
-    padding: 30px 0px;
-}
-
-footer .img_cover{
-   margin:0 auto;
-}
-
-footer .footer_discl {
-    margin: 10px 0px;
-}
 
 
 /*=============================
@@ -261,7 +247,7 @@ footer .footer_discl {
 
 .match_block .match_wrapper .match_top .left,
 .match_block .match_wrapper .match_bottom .left {
-    background: #ffffff; 
+    background: #ffffff;
     font-family: 'Righteous', cursive;
     flex-grow: 1;
     margin-right: 5px;
@@ -287,14 +273,14 @@ footer .footer_discl {
 
 
 .match_block .match_wrapper .match_top .right,
-.match_block .match_wrapper .match_bottom .right { 
+.match_block .match_wrapper .match_bottom .right {
     background: #0e1731;
     width: 70px;
     color: #ffffff;
     font-size: 50px;
     text-align: center;
     padding-top: 6px;
-} 
+}
 
 .match_box_big {
     width:100%;
@@ -385,7 +371,7 @@ footer .footer_discl {
 ===============================*/
 
 
-.home_meetplayers { 
+.home_meetplayers {
     background: #ffffff;
 }
 
@@ -442,7 +428,7 @@ footer .footer_discl {
     bottom: 0px;
 }
 
-.player_card_wrapper .player_card_name span { 
+.player_card_wrapper .player_card_name span {
     display: block;
     font-size: 25px;
     color: #0d1831;
@@ -466,7 +452,7 @@ footer .footer_discl {
     padding: 80px 0px 30px 0px;
 }
 
-.promotion_wrapper .promotion_animation .left { 
+.promotion_wrapper .promotion_animation .left {
     text-transform: uppercase;
     text-transform: uppercase;
     font-size: 150px;
@@ -598,7 +584,7 @@ footer .footer_discl {
     width: 480px;
 }
 
- 
+
 .select_team_layout .wrapper{
     display: flex;
 }

@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar'
 import Button from '@material-ui/core/Button';
@@ -13,13 +13,12 @@ const header_logo=styled.div`
 
 
 const AppBarComponent = styled(AppBar)`
- background-color: '#98c5e9';
-                         box-Shadow: 'none';
-                         padding: '10px 0';
-                         border-Bottom: '2px solid #00285e'`;
+                         background-color:#98c5e9;
+                         box-Shadow: none;
+                         padding: 10px 0;
+                         border-Bottom: 2px solid #00285e`;
 
-class Header extends Component {
-    render() {
+const  Header =()=> {
         return (
             <AppBarComponent position="fixed">
                 <Toolbar style={{
@@ -48,6 +47,6 @@ class Header extends Component {
             </AppBarComponent>
         );
     }
-}
+
 
 export default Header;
