@@ -1,12 +1,9 @@
 import React from 'react'
-// import styled from "styled-components";
-
-
 
 export const matches_Block = ({match}) => {
 
     return (
-        <>
+
             <div className="match_block">
                 <div className="match_block">
                     {match.final
@@ -20,6 +17,6 @@ export const matches_Block = ({match}) => {
                     <div className="right" style={{backgroundImage: `url(/images/team_icons/${match.localThmb}.png)`}}></div>
                 </div>
             </div>
-        </>
+        
     );
 }

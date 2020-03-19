@@ -3,21 +3,6 @@ import { easePolyOut } from 'd3-ease';
 import Animate from 'react-move/Animate';
 
 import FeaturedPlayer from '../../../Resources/images/featured_player.png'
-import  styled  from 'styled-components';
-
-const featured_number = styled.div`
-font-size:270px;
-  color: #ffffff;
-    transform: translate(260px,170px);
-    position: absolute;
-  `;
-const featured_first=styled.div`
-    position: absolute;
-    background: #0e1731;
-    color: #ffffff;
-    font-size: 92px;
-    text-transform: uppercase;
-    padding: 0px 20px;`;
 
 class Text extends Component {
 
@@ -36,15 +21,14 @@ class Text extends Component {
           >
                {({ opacity, rotate }) => {
                     return (
-                         <featured_number
+                         <div className="featured_number"
                               style={{
                                    opacity,
-                                   color: "#0000",
                                    transform: `translate(260px,170px) rotateY(${rotate}deg)`
                               }}
                          >
                               3
-                         </featured_number>
+                         </div>
                     )
                }}
           </Animate>
@@ -68,14 +52,14 @@ class Text extends Component {
           >
                {({ opacity, x, y }) => {
                     return (
-                         <featured_first
+                         <div className="featured_first"
                               style={{
                                    opacity,
                                    transform: `translate(${x}px,${y}px)`
                               }}
                          >
                               League
-                         </featured_first>
+                         </div>
                     )
                }}
           </Animate>
