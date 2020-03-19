@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom';
 import {CityLogo} from '../Ui/icons';
 
 import styled from 'styled-components'
-const header_logo=styled.div`
+const HLogo=styled.div`
 `;
 
 
@@ -27,13 +27,13 @@ const  Header =()=> {
                     <div style={{
                         flexGrow: 1
                     }}>
-                        <header_logo>
+                            <HLogo>
                             <CityLogo
                             link={true}
                             linkTo="/"
                             width="70px"
                             height="70px"/>
-                        </header_logo>
+                            </HLogo>
                     </div>
 
                     <Link to="/the_team">

@@ -1,37 +1,28 @@
-import React from 'react'
-import styled from'styled-components'
-import 
+import React from "react";
+import Block from'./Block'
+import { Tag } from "../../Ui/misc";
+const MatchesHome = () => {
+  return (
+    <div className="home_matches_wrapper">
+      <div className="container">
+        <Tag bck="#0e1731" size="50px" color="#ffffff">
+          Matches
+        </Tag>
+
+        <Block style={{background:"red"}}/>
 
 
-const Wrapper= styled.div`
+        <Tag
+          bck="#ffffff"
+          size="22px"
+          color="#0e1731"
+          link={true}
+          link_to="/the_team">
+          See more matches
+        </Tag>
+      </div>
+    </div>
+  );
+};
 
-     background: #98c5e9;
-     margin-top: 9px;
-     padding: 50px 0px;
-
-.home_matches {
-     flex-wrap: wrap;
-     display: flex;
-     margin-top: 60px;
-}
-
-.home_matches.item {
-     width: 50%;
-     margin: 35px 0px;
-}
-
-.home_matches.item.wrapper {
-     padding-right: 30px;
-}`
-
-
-export const MatchesHome = () => {
-     return (
-          <Wrapper>
-          <div className="container">
-          </div>
-
-          </Wrapper>
-     )
-}
-
+export default MatchesHome;

@@ -1,13 +1,13 @@
 import React from 'react';
 import Featured from './featured';
-import { MatchesHome } from './matches';
+import  MatchesHome  from './matches';
 
 const Home = () => {
      return (
-          <div className="bck_blue">
-               <Featured />
-               <MatchesHome/>
-          </div>
+       <div className="bck_blue">
+         <Featured />
+         <MatchesHome />
+       </div>
      );
 };
 
