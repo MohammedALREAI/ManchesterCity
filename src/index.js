@@ -14,7 +14,7 @@ const App = (props) => {
     <BrowserRouter>
       <Layout>
         <Switch>
-                      <PrivateRoute {...props} path="dashboard"exact  component={Dashboard}   />
+                      <PrivateRoute {...props} path="/dashboard" exact component={Dashboard} />
           <Route exact component={Home} path="/" />
           <Route exact component={SignIn} path="/sign_in" />
         </Switch>
