@@ -1,26 +1,29 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './Resources/css/app.css';
-import './firebase';
+import React from "react";
+import { render } from "react-dom";
+import "./Resources/css/app.css";
+import "./firebase";
 import Layout from "./HOC/Layout";
 
-import Home from './Components/home/index'
-import SignIn from './Components/singin/index'
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { SignIn, Home, Dashboard, PrivateRoute} from "./AllComponnt";
+import { firebase } from "./firebase";
 // import Routes from './routes';
 
-const App = () => {
-    return (
-        <BrowserRouter>
-              <Layout>
-                   <Switch>
-                        <Route exact component={Home} path="/" />
-                        <Route  component={SignIn} path="/sign_in" />
-                   </Switch>
-              </Layout>        </BrowserRouter>
-    )
-}
+const App = (props) => {
+  return (
+    <BrowserRouter>
+      <Layout>
+        <Switch>
+                      <PrivateRoute {...props} path="dashboard"exact  component={Dashboard}   />
+          <Route exact component={Home} path="/" />
+          <Route exact component={SignIn} path="/sign_in" />
+        </Switch>
+      </Layout>{" "}
+    </BrowserRouter>
+  );
+};
 
-ReactDOM.render(<App />, document.getElementById('root'));
+firebase.auth().onAuthStateChanged((user) => {
+     render(<App user={user} />, document.getElementById('root'));
+})
 

@@ -16,7 +16,7 @@ const AppBarComponent = styled(AppBar)`
                          background-color:#98c5e9;
                          box-Shadow: none;
                          padding: 10px 0;
-                         border-Bottom: 2px solid #00285e`;
+                         border-Bottom: 4    px solid #00285e`;
 
 const  Header =()=> {
         return (

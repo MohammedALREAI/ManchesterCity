@@ -532,8 +532,11 @@ button {
 ===============================*/
 
 .admin_container {
-  margin-top: 96px;
+  /* margin-top: 94px; */
   display: flex;
+      /* position: absolute; */
+      top: 94px;
+
 }
 
 .admin_container .admin_left_nav {
@@ -649,10 +652,4 @@ button {
   font-size: 50px;
 }
 
-.user_dashboard {
-  font-size: 60px;
-  font-family: "Righteous", cursive;
-  color: #d5ebfe;
-  text-align: center;
-  margin-top: 200px;
-}
+
