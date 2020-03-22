@@ -9,6 +9,8 @@
     "@testing-library/user-event": "^7.1.2",
     "d3-ease": "^1.0.6",
     "firebase": "^7.11.0",
+    "firebase-tools": "^7.15.1",
+    "global": "^4.4.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-firebase-file-uploader": "^2.4.3",

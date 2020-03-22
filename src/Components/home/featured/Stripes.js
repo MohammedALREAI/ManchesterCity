@@ -7,7 +7,7 @@ class Stripes extends Component {
     state = {
         stripes:[
             {
-                  background:'#3f51b5',
+                background:'#98c5e9',
                 left: 120,
                 rotate: 25,
                 top: -260 ,
@@ -45,7 +45,7 @@ class Stripes extends Component {
                 }}
 
                 enter={{
-                     background: stripe.background,
+                    background: [stripe.background],
                     opacity:[1],
                     left:[stripe.left],
                     rotate:[stripe.rotate],
@@ -53,7 +53,7 @@ class Stripes extends Component {
                     timing: {delay:stripe.delay, duration: 200, ease: easePolyOut },
                     events:{
                         end(){
-                            console.log('animation finished')
+                           // console.log('animation finished')
                         }
                     }
                 }}
